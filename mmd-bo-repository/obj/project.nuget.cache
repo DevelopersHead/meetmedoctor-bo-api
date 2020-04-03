@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "K/KTC9K/dLZny/wR6s75MUeWohbNle8LamavFpehpIDuBSUTjd0QkYqH2adGhCXWvlMBJWdrvaLnIiAfIIpbcw==",
+  "success": true,
+  "projectFilePath": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/mmd-bo-repository.csproj",
+  "expectedPackageFiles": [
+    "/home/mganitombalak/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/mganitombalak/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
