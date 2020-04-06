@@ -4,26 +4,26 @@
     "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/mmd-bo-repository.csproj": {}
   },
   "projects": {
-    "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/mmd-bo-repository.csproj": {
+    "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-domain/mmd-bo-domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/mmd-bo-repository.csproj",
-        "projectName": "mmd-bo-repository",
-        "projectPath": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/mmd-bo-repository.csproj",
+        "projectUniqueName": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-domain/mmd-bo-domain.csproj",
+        "projectName": "mmd-bo-domain",
+        "projectPath": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-domain/mmd-bo-domain.csproj",
         "packagesPath": "/home/mganitombalak/.nuget/packages/",
-        "outputPath": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/obj/",
+        "outputPath": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/mganitombalak/.nuget/NuGet/NuGet.Config"
+          "/home/mganitombalak/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -34,13 +34,21 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netcoreapp3.1": {
           "dependencies": {
-            "NETStandard.Library": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[3.1.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             }
           },
           "imports": [
@@ -53,6 +61,71 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/mmd-bo-repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/mmd-bo-repository.csproj",
+        "projectName": "mmd-bo-repository",
+        "projectPath": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/mmd-bo-repository.csproj",
+        "packagesPath": "/home/mganitombalak/.nuget/packages/",
+        "outputPath": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-repository/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mganitombalak/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-domain/mmd-bo-domain.csproj": {
+                "projectPath": "/home/mganitombalak/Projects/meetmedoctor-bo-api/mmd-bo-domain/mmd-bo-domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
         }
       }

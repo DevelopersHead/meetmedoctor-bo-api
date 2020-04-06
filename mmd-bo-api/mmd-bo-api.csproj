@@ -1,5 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
+  <ItemGroup>
+    <ProjectReference Include="..\mmd-bo-domain\mmd-bo-domain.csproj" />
+    <ProjectReference Include="..\mmd-bo-repository\mmd-bo-repository.csproj" />
+    <ProjectReference Include="..\mmd-bo-service\mmd-bo-service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.2" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>mmd_bo_api</RootNamespace>

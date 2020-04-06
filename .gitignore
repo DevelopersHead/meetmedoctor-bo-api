@@ -1,0 +1,10 @@
+.idea/
+.vs/
+.vscode/
+**/*.cache
+**/obj/
+**/bin/
+**/.DS_Store
+**/*.dll
+**/*.props
+**/*.targets
